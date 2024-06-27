@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+            background-image:url(init.jpg);
+            display: flex;
+            background-size:cover;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            background-color: #fff;
+            opacity: 90%;
+            padding: 40px 30px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            border-radius: 15px;
+            max-width: 500px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .login-form h2 {
+            margin-bottom: 20px;
+            font-weight: 700;
+            color: #007bff;
+        }
+
+        .form-group label {
+            font-weight: 500;
+            color: #007bff;
+            text-align: left; /* Align labels to the left */
+            display: block; /* Ensures labels are on top of inputs */
+            margin-bottom: 5px; /* Adds spacing below labels */
+        }
+
+        .form-control {
+            border: 2px solid #ddd;
+            border-radius: 50px;
+            padding: 10px 20px;
+        }
+
+        .form-control:focus {
+            border-color: #007bff;
+            outline: none;
+            box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+        }
+
+        .btn {
+            width: 100%;
+            padding: 12px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 50px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            margin-top: 10px;
+        }
+
+        .btn:hover {
+            background-color: #0056b3;
+        }
+
+        .btn:focus {
+            outline: none;
+            box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+        }
+
+        .nav-tabs {
+            border: none; /* Remove border from tabs */
+            margin-bottom: 20px; /* Add spacing below tabs */
+        }
+
+        .nav-tabs .nav-link {
+            border: none;
+            color: #007bff;
+            border-bottom: 2px solid transparent;
+        }
+
+        .nav-tabs .nav-link.active {
+            border-color: #007bff;
+            font-weight: bold;
+        }
+
+        .background-image {
+            width: 100%;
+            background-position: center center;
+            background-size: 100%;
+            background-repeat: no-repeat;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="login-form">
+            <h2>Login</h2>
+            <ul class="nav nav-tabs" id="loginTab" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" id="student-tab" data-toggle="tab" href="#student" role="tab" aria-controls="student" aria-selected="true">Student</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="teacher-tab" data-toggle="tab" href="#teacher" role="tab" aria-controls="teacher" aria-selected="false">Admin</a>
+                </li>
+            </ul>
+            <div class="tab-content" id="loginTabContent">
+                <div class="tab-pane fade show active" id="student" role="tabpanel" aria-labelledby="student-tab">
+                    <form id="studentLoginForm">
+                        <div class="form-group">
+                            <label for="studentID">Student USN</label>
+                            <input type="text" class="form-control" id="studentID" placeholder="Enter Student USN" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="studentGrade">Password</label>
+                            <input type="password" class="form-control" id="studentGrade" placeholder="Enter password" required>
+                        </div>
+                        <button type="submit" class="btn">Login as Student</button>
+                    </form>
+                </div>
+                <div class="tab-pane fade" id="teacher" role="tabpanel" aria-labelledby="teacher-tab">
+                    <form id="teacherLoginForm">
+                        <div class="form-group">
+                            <label for="teacherID">Admin ID</label>
+                            <input type="text" class="form-control" id="teacherID" placeholder="Enter ID" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="teacherDepartment">Password</label>
+                            <input type="password" class="form-control" id="teacherDepartment" placeholder="Enter password" required>
+                        </div>
+                        <button type="submit" class="btn">Login as Teacher</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#loginTab a').on('click', function (e) {
+                e.preventDefault();
+                $(this).tab('show');
+            });
+
+            $('#studentLoginForm').on('submit', function(event) {
+                event.preventDefault();
+                window.location.href = 'main.html'; // Redirect to student dashboard
+            });
+
+            $('#teacherLoginForm').on('submit', function(event) {
+                event.preventDefault();
+                window.location.href = 'admin.html'; // Redirect to admin dashboard
+            });
+        });
+    </script>
+</body>
+</html>

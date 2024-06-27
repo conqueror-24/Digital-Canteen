@@ -1,0 +1,169 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    font-family: "Poppins", sans-serif;
+    background-image: url('http://sahyadri.edu.in/images/gallery/Sahyadri-Food-Court.jpg');
+    background-size: cover;
+}
+
+header {
+    background-color: #343a40;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+nav {
+    background-color: #495057;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: #343a40;
+}
+footer {
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+main{
+    padding: 20px;
+
+}
+
+h2 {
+    color: #495057;
+    border-bottom: 2px solid #6c757d;
+    padding-bottom: 5px;
+}
+
+.menu-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.menu-item {
+    background-color: white;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    width: calc(25% - 40px);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.menu-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+h1{
+    text-align: center;
+}
+.menu-item img {
+    border-radius: 8px;
+    max-width: 100%;
+    height: 300px;
+}
+nav ul li.cart {
+    float: right;
+}
+nav ul li.home-btn a {
+    background-color: #007bff; /* Blue color for the Home button */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px 20px; /* Larger padding for better clickability */
+    font-weight: bold; /* Bold text */
+    color: white; /* White text color */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+nav ul li.home-btn a:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+
+.menu-item h3 {
+    margin: 10px 0;
+    color: #343a40;
+}
+
+.menu-item p {
+    margin: 5px 0;
+    color: #6c757d;
+}
+
+.order-form {
+    margin-top: 10px;
+}
+
+.order-form label {
+    display: block;
+    margin-bottom: 5px;
+    color: #495057;
+}
+
+.order-form input[type="number"] {
+    width: 60px;
+    padding: 5px;
+    text-align: center;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+footer {
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.order-form button {
+    background-color: #28a745;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.order-form button:hover {
+    background-color: #218838;
+}
+
+@media (max-width: 768px) {
+    .menu-item {
+        width: calc(50% - 40px);
+    }
+}
+
+@media (max-width: 480px) {
+    .menu-item {
+        width: 100%;
+    }
+}

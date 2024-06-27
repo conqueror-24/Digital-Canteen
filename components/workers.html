@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Staff Attendance</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+        }
+        main {
+            padding: 20px;
+        }
+        #staff-list {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+        }
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .staff-info img {
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            margin-right: 10px;
+            vertical-align: middle;
+        }
+        .status {
+            font-size: 1rem;
+            padding: 5px 10px;
+            border-radius: 5px;
+            text-align: center;
+        }
+        .present {
+            background-color: #d4edda;
+            color: #155724;
+        }
+        .absent {
+            background-color: #f8d7da;
+            color: #721c24;
+        }
+        .checkbox-container {
+            display: flex;
+            gap: 10px;
+        }
+        .checkbox-container label {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        .save-button-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .save-button {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .save-button:hover {
+            background-color: #555;
+        }
+        @media (max-width: 600px) {
+            th, td {
+                display: block;
+                width: 100%;
+                box-sizing: border-box;
+            }
+            th {
+                background-color: #333;
+                color: #fff;
+                text-align: center;
+            }
+            td {
+                text-align: center;
+                padding: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Restaurant Staff Attendance</h1>
+    </header>
+    <main>
+        <section id="staff-list">
+            <h2>Staff Present Today</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Staff Member</th>
+                        <th>Role</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="staff-info">
+                            <img src="https://i.pinimg.com/564x/d9/d8/8e/d9d88e3d1f74e2b8ced3df051cecb81d.jpg" alt="Mohan"> Mohan
+                        </td>
+                        <td>Chef</td>
+                        <td>
+                            <div class="checkbox-container">
+                                <label>
+                                    <input type="checkbox" class="present-checkbox" data-staff="mohan">
+                                    Present
+                                </label>
+                                <label>
+                                    <input type="checkbox" class="absent-checkbox" data-staff="mohan">
+                                    Absent
+                                </label>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="staff-info">
+                            <img src="https://i.pinimg.com/564x/d9/d8/8e/d9d88e3d1f74e2b8ced3df051cecb81d.jpg" alt="Sujata"> Sujata
+                        </td>
+                        <td>Waitress</td>
+                        <td>
+                            <div class="checkbox-container">
+                                <label>
+                                    <input type="checkbox" class="present-checkbox" data-staff="sujata">
+                                    Present
+                                </label>
+                                <label>
+                                    <input type="checkbox" class="absent-checkbox" data-staff="sujata">
+                                    Absent
+                                </label>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="staff-info">
+                            <img src="https://i.pinimg.com/564x/d9/d8/8e/d9d88e3d1f74e2b8ced3df051cecb81d.jpg" alt="Sujata"> Madhav
+                        </td>
+                        <td>Waitress</td>
+                        <td>
+                            <div class="checkbox-container">
+                                <label>
+                                    <input type="checkbox" class="present-checkbox" data-staff="sujata">
+                                    Present
+                                </label>
+                                <label>
+                                    <input type="checkbox" class="absent-checkbox" data-staff="sujata">
+                                    Absent
+                                </label>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="staff-info">
+                            <img src="https://i.pinimg.com/564x/d9/d8/8e/d9d88e3d1f74e2b8ced3df051cecb81d.jpg" alt="Sujata"> Suresh
+                        </td>
+                        <td>Waitress</td>
+                        <td>
+                            <div class="checkbox-container">
+                                <label>
+                                    <input type="checkbox" class="present-checkbox" data-staff="sujata">
+                                    Present
+                                </label>
+                                <label>
+                                    <input type="checkbox" class="absent-checkbox" data-staff="sujata">
+                                    Absent
+                                </label>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="save-button-container">
+                <button class="save-button">Save</button>
+            </div>
+        </section>
+    </main>
+    <script>
+        document.querySelectorAll('.present-checkbox').forEach(checkbox => {
+            checkbox.addEventListener('change', function() {
+                if (this.checked) {
+                    this.closest('td').querySelector('.absent-checkbox').checked = false;
+                }
+            });
+        });
+
+        document.querySelectorAll('.absent-checkbox').forEach(checkbox => {
+            checkbox.addEventListener('change', function() {
+                if (this.checked) {
+                    this.closest('td').querySelector('.present-checkbox').checked = false;
+                }
+            });
+        });
+
+        function saveAttendance() {
+            const attendance = {};
+            document.querySelectorAll('.present-checkbox, .absent-checkbox').forEach(checkbox => {
+                const staff = checkbox.getAttribute('data-staff');
+                if (!attendance[staff]) {
+                    attendance[staff] = { present: false, absent: false };
+                }
+                if (checkbox.classList.contains('present-checkbox')) {
+                    attendance[staff].present = checkbox.checked;
+                }
+                if (checkbox.classList.contains('absent-checkbox')) {
+                    attendance[staff].absent = checkbox.checked;
+                }
+            });
+            localStorage.setItem('attendance', JSON.stringify(attendance));
+        }
+
+        function loadAttendance() {
+            const attendance = JSON.parse(localStorage.getItem('attendance')) || {};
+            Object.keys(attendance).forEach(staff => {
+                if (attendance[staff].present) {
+                    document.querySelector(`.present-checkbox[data-staff="${staff}"]`).checked = true;
+                }
+                if (attendance[staff].absent) {
+                    document.querySelector(`.absent-checkbox[data-staff="${staff}"]`).checked = true;
+                }
+            });
+        }
+
+        document.querySelector('.save-button').addEventListener('click', saveAttendance);
+
+        window.addEventListener('load', loadAttendance);
+    </script>
+</body>
+</html>

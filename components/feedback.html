@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <title>User Reviews and Feedbacks</title>
+    <style>
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f0f0f0;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            font-weight: 600;
+            margin-bottom: 40px;
+            color: #333;
+        }
+
+        
+        .carousel-item {
+            background-color: #3491f5; 
+            border: 10px solid #000;
+            text-align: center;
+            padding: 30px;
+            height: auto; 
+        }
+
+        h3 {
+            font-weight: bold;
+            color: #f1c40f; 
+            margin-bottom: 10px;
+        }
+
+        h5 {
+            font-weight: bold;
+            color: #fff; 
+            margin-bottom: 20px;
+        }
+
+        p {
+            color: #fff; 
+            font-style: italic;
+        }
+
+        .carousel-control-prev,
+        .carousel-control-next {
+            width: 5%;
+            color: #000;
+        }
+
+        .carousel-control-prev-icon,
+        .carousel-control-next-icon {
+            background-color: #000;
+        }
+
+        .section {
+            margin-bottom: 60px;
+        }
+
+        .section h2 {
+            color: #333;
+            font-weight: 600;
+            margin-left: 20px;
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1>User Reviews and Feedbacks</h1>
+
+    <div class="latest section">
+        <h2>Latest Reviews</h2>
+        <div id="carouselExampleLatest" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <h3>Mohan</h3>
+                    <h5>Rating : 4.5/5</h5>
+                    <p>"The canteen food is amazing! The variety is impressive, and everything is always fresh. I particularly love the pasta station and the salad bar. The prices are also reasonable, making it easy to grab a quick, healthy meal between classes."</p>
+                </div>
+                <div class="carousel-item">
+                    <h3>Ankit</h3>
+                    <h5>Rating : 4/5</h5>
+                    <p>"The canteen is definitely one of the highlights of my day. The breakfast options are fantastic, and the coffee is better than most cafes. Lunch is always a treat with their daily specials. Kudos to the team for keeping everything so clean and organized."</p>
+                </div>
+                <div class="carousel-item">
+                    <h3>Sakshi</h3>
+                    <h5>Rating : 3/5</h5>
+                    <p>"The food at the canteen is generally good, but there are days when it feels a bit hit-or-miss. Some dishes can be quite oily, and the wait times can get long during peak hours. That said, I do enjoy the variety and the occasional themed food days."</p>
+                </div>
+                <div class="carousel-item">
+                    <h3>Rohit</h3>
+                    <h5>Rating : 3.2/5</h5>
+                    <p>"I have a love-hate relationship with the canteen. Some days, the food is excellent and other days, not so much. I wish there were more healthy options and less fried food. The prices are fair, but I think they could improve the quality of some meals."</p>
+                </div>
+                <div class="carousel-item">
+                    <h3>Kiran</h3>
+                    <h5>Rating : 2/5</h5>
+                    <p>"The canteen food is not great. It's often overcooked and greasy. I find the menu repetitive and uninspiring. The lines are always long, and it can be hard to find a place to sit. I think they need to seriously reconsider their menu and food quality."</p>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleLatest" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleLatest" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+    <div class="oldest section">
+        <h2>Old Reviews</h2>
+        <div id="carouselExampleOld" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <h3>Mohan</h3>
+                    <h5>Rating : 4.5/5</h5>
+                    <p>"The canteen food is amazing! The variety is impressive, and everything is always fresh. I particularly love the pasta station and the salad bar. The prices are also reasonable, making it easy to grab a quick, healthy meal between classes."</p>
+                </div>
+                <div class="carousel-item">
+                    <h3>Ankit</h3>
+                    <h5>Rating : 4/5</h5>
+                    <p>"The canteen is definitely one of the highlights of my day. The breakfast options are fantastic, and the coffee is better than most cafes. Lunch is always a treat with their daily specials. Kudos to the team for keeping everything so clean and organized."</p>
+                </div>
+                <div class="carousel-item">
+                    <h3>Sakshi</h3>
+                    <h5>Rating : 3/5</h5>
+                    <p>"The food at the canteen is generally good, but there are days when it feels a bit hit-or-miss. Some dishes can be quite oily, and the wait times can get long during peak hours. That said, I do enjoy the variety and the occasional themed food days."</p>
+                </div>
+                <div class="carousel-item">
+                    <h3>Rohit</h3>
+                    <h5>Rating : 3.2/5</h5>
+                    <p>"I have a love-hate relationship with the canteen. Some days, the food is excellent and other days, not so much. I wish there were more healthy options and less fried food. The prices are fair, but I think they could improve the quality of some meals."</p>
+                </div>
+                <div class="carousel-item">
+                    <h3>Kiran</h3>
+                    <h5>Rating : 2/5</h5>
+                    <p>"The canteen food is not great. It's often overcooked and greasy. I find the menu repetitive and uninspiring. The lines are always long, and it can be hard to find a place to sit. I think they need to seriously reconsider their menu and food quality."</p>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleOld" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleOld" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+</body>
+</html>
