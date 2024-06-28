@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Canteen Menu</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>Sahyadri Canteen Menu</h1>
+    </header>
+    <nav>
+        <ul>
+            <li class="home-btn"><a href="index.html">Home</a></li>
+            <li><a href="#breakfast">Breakfast</a></li>
+            <li><a href="#lunch">Lunch</a></li>
+            <li><a href="#snacks">Snacks</a></li>
+            <li><a href="#beverages">Beverages</a></li>
+            <li class="nav-item">
+                <a class="nav-link" href="cart.html">Cart</a>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <section id="specials">
+            <h2>Sahyadri Popular</h2>
+            <div id="special-items" class="menu-items"></div>
+        </section>
+        <section id="breakfast">
+            <h2>Breakfast</h2>
+            <div class="menu-items" data-category="breakfast"></div>
+        </section>
+        <section id="lunch">
+            <h2>Lunch</h2>
+            <div class="menu-items" data-category="lunch"></div>
+        </section>
+        <section id="snacks">
+            <h2>Snacks</h2>
+            <div class="menu-items" data-category="snacks"></div>
+        </section>
+        <section id="beverages">
+            <h2>Beverages</h2>
+            <div class="menu-items" data-category="beverages"></div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 College Canteen. All rights reserved.</p>
+        <a class="feed" href="rate\index.html">FeedBack</a>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+
+</html>

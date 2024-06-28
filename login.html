@@ -39,9 +39,9 @@
         .form-group label {
             font-weight: 500;
             color: #007bff;
-            text-align: left; /* Align labels to the left */
-            display: block; /* Ensures labels are on top of inputs */
-            margin-bottom: 5px; /* Adds spacing below labels */
+            text-align: left; 
+            display: block;
+            margin-bottom: 5px;
         }
 
         .form-control {
@@ -79,8 +79,8 @@
         }
 
         .nav-tabs {
-            border: none; /* Remove border from tabs */
-            margin-bottom: 20px; /* Add spacing below tabs */
+            border: none;
+            margin-bottom: 20px;
         }
 
         .nav-tabs .nav-link {
@@ -139,7 +139,7 @@
                             <label for="teacherDepartment">Password</label>
                             <input type="password" class="form-control" id="teacherDepartment" placeholder="Enter password" required>
                         </div>
-                        <button type="submit" class="btn">Login as Teacher</button>
+                        <button type="submit" class="btn">Login as Admin</button>
                     </form>
                 </div>
             </div>
@@ -159,12 +159,12 @@
 
             $('#studentLoginForm').on('submit', function(event) {
                 event.preventDefault();
-                window.location.href = 'main.html'; // Redirect to student dashboard
+                window.location.href = './aneesh/index.html'; 
             });
 
             $('#teacherLoginForm').on('submit', function(event) {
                 event.preventDefault();
-                window.location.href = 'admin.html'; // Redirect to admin dashboard
+                window.location.href = 'admin.html'; 
             });
         });
     </script>
